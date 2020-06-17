@@ -1,0 +1,272 @@
+body{
+  width : 100vw;
+  height: 100vh;
+  margin:0;
+  padding:0;
+  font-family: "Niramit", "Arial", sans-serif;
+  font-size: 16px;
+  color: #444;
+  overflow: hidden;
+
+}
+
+.loaderContainer{
+  width : 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+
+.backgroundLoader{
+  width : 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.donutLoader{
+  position: absolute;
+  width : auto;
+  height: 20%;
+  left : 45%;
+  top : 60%;
+  animation-name : donutRotate;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes donutRotate{
+  0%{
+    transform : rotate(0deg);
+  }
+  100%{
+    transform :rotate(360deg);
+  }
+}
+
+.txtLoader{
+  position: absolute;
+  text-align: center;
+  width : 10%;
+  height: auto;
+  left : 45%;
+  bottom : 5%;
+}
+
+#backgroundMap{
+  width : 100%;
+  height: 100%;
+  position: relative;
+}
+
+#android{
+  width : 3%;
+  height: auto;
+  position: absolute;
+  left : 30%;
+  bottom : 31.3%;
+}
+
+#bowling{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 57%;
+  bottom : 47%;
+}
+
+#centrale{
+  width : 28%;
+  height: auto;
+  position: absolute;
+  left : 73%;
+  bottom : 68%;
+}
+
+#studio{
+  width : 8%;
+  height: auto;
+  position: absolute;
+  left : 25%;
+  bottom : 37%;
+}
+
+#donuts{
+  width : 8%;
+  height: auto;
+  position: absolute;
+  left : 49%;
+  bottom : 23%;
+  transform : rotate(-2deg);
+}
+
+#duff{
+  width : 12%;
+  height: auto;
+  position: absolute;
+  left : 52%;
+  bottom : 63%;
+}
+
+#ecole{
+  width : 7%;
+  height: auto;
+  position: absolute;
+  left : 54%;
+  bottom : 53%;
+  transform : rotate(-4deg);
+}
+
+#eglise{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 60.6%;
+  bottom : 50.6%;
+}
+
+#ferme{
+  width : 7%;
+  height: auto;
+  position: absolute;
+  left : 85%;
+  bottom : 38%;
+}
+
+#flanders{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 72.2%;
+  bottom : 42.2%;
+}
+
+#poisson{
+  width : 6%;
+  height: auto;
+  position: absolute;
+  left : 2%;
+  bottom : 20%;
+}
+
+#hopital{
+  width : 7%;
+  height: auto;
+  position: absolute;
+  left : 70.6%;
+  bottom : 25%;
+  transform : rotate(2deg);
+}
+
+#burger{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 52%;
+  bottom : 42.5%;
+}
+
+#luigi{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 32.5%;
+  bottom : 28%;
+}
+
+#mairie{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 52%;
+  bottom : 49.5%;
+}
+
+#frink{
+  width : 4%;
+  height: auto;
+  position: absolute;
+  left : 82.5%;
+  bottom : 54.5%;
+}
+
+#mall{
+  width : 7%;
+  height: auto;
+  position: absolute;
+  left : 64%;
+  bottom : 37%;
+}
+
+#manoir{
+  width : 10.5%;
+  height: auto;
+  position: absolute;
+  left : 1.4%;
+  bottom : 59%;
+}
+
+#minimarket{
+  width : 4%;
+  height: auto;
+  position: absolute;
+  left : 66%;
+  bottom : 47.5%;
+}
+
+#moe{
+  width : 3%;
+  height: auto;
+  position: absolute;
+  left : 67.4%;
+  bottom : 31.7%;
+}
+
+#nelson{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 87%;
+  bottom : 49%;
+}
+
+#police{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 42%;
+  bottom : 40%;
+}
+
+#retraite{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 77%;
+  bottom : 30%;
+}
+
+#selma{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 48%;
+  bottom : 53%;
+  transform : rotate(1deg);
+}
+
+#simpson{
+  width : 5%;
+  height: auto;
+  position: absolute;
+  left : 75.7%;
+  bottom : 45.7%;
+}
+
+#skinner{
+  width : 7%;
+  height: auto;
+  position: absolute;
+  left : 77.4%;
+  bottom : 47.4%;
+}
