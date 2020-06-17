@@ -59,6 +59,18 @@ body{
   position: relative;
 }
 
+.lieu img{
+  cursor: pointer;
+  opacity : .8;
+  transition : all .2s ease;
+}
+
+.lieu:hover img{
+  opacity : 1;
+  box-shadow: 0px 0px 5px yellow;
+  border-radius: 20px;
+}
+
 #android{
   width : 3%;
   height: auto;
