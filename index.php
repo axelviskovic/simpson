@@ -46,16 +46,16 @@
     <a class="lieu" href="lieux.php?id=24"><img id="luigi" src="images/lieux/LUIGI.png"></a>
     <a class="lieu" href="lieux.php?id=5"><img id="mairie" src="images/lieux/MAIRIE.png"></a>
     <a class="lieu" href="lieux.php?id=22"><img id="frink" src="images/lieux/FRINK.png"></a>
+    <a class="lieu" href="lieux.php?id=12"><img id="krustystudio" src="images/lieux/KRUSTYSTUDIO.png"></a>
+    <a class="lieu" href="lieux.php?id=11"><img id="studio" src="images/lieux/STUDIO.png"></a>
     <img id="mall" src="images/lieux/MALL.png">
     <a class="lieu" href="lieux.php?id=13"><img id="manoir" src="images/lieux/MANOIR.png"></a>
-    <a class="lieu" href="lieux.php?id=1<6"><img id="minimarket" src="images/lieux/MINIMARKET.png"></a>
+    <a class="lieu" href="lieux.php?id=16"><img id="minimarket" src="images/lieux/MINIMARKET.png"></a>
     <a class="lieu" href="lieux.php?id=8"><img id="moe" src="images/lieux/MOE.png"></a>
     <a class="lieu" href="lieux.php?id=21"><img id="nelson" src="images/lieux/NELSON.png"></a>
     <a class="lieu" href="lieux.php?id=4"><img id="police" src="images/lieux/POLICE.png"></a>
     <a class="lieu" href="lieux.php?id=18"><img id="retraite" src="images/lieux/RETRAITE.png"></a>
     <a class="lieu" href="lieux.php?id=14"><img id="selma" src="images/lieux/SELMA.png"></a>
 
-
-    <script src="scripts/main.js"></script>
   </body>
 </html>
