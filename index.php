@@ -1,6 +1,6 @@
 <?php 
 
-  include_once 'config.php';
+  
 
   $query = $pdo->query('SELECT id, nom, description, image FROM personnages');
   $personnages = $query->fetchAll();

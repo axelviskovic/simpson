@@ -54,11 +54,9 @@
 
   <!-- CREATION PERSONNAGES -->
     <?php foreach($perso as $_personnage) : ?>
-      <div class="personnageContainer">
-        <h2 class="nom"><?= $_personnage->nom ?></h2>
-        <h3 class="description"><?= $_personnage->description ?></h3>
+      <!-- <a href="informations.php?idPerso=" class="personnageContainer"> -->
         <img class="persoImg" src="<?= $_personnage->image ?>">
-      </div>
+     </a>
     <?php endforeach ?> 
 
     <script src="scripts/main.js"></script>
