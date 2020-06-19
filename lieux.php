@@ -3,18 +3,18 @@
   include_once 'config.php';
 
   $lieux_id = (int)$_GET['id'];
-  if($lieux_id==1){
-    
-  }
+
   $query = $pdo->query('SELECT id, nom, image FROM lieux WHERE id ='.$lieux_id);
   $lieu = $query->fetch();
 
   $query = $pdo->query('SELECT id, nom, description, image FROM personnages WHERE id_lieu ='.$lieux_id);
   $perso = $query->fetchAll();
 
-
+  session_start();
+  $_SESSION['lieuInfo'] = $lieux_id;
 
 ?>
+
 
 
 
@@ -31,7 +31,7 @@
 
     <img id="backgroundLieu" src="<?= $lieu->image ?>">
 
-    <a href="index.php"><img class="flecheBack" src="images/FLECHEGAUCHEJAUNE.png"></a>
+    <a href="map.php"><img class="flecheBack" src="images/FLECHEGAUCHEJAUNE.png"></a>
 
     <!-- FLECHES MAISON SIMPSON -->
   <?php
@@ -54,7 +54,8 @@
 
   <!-- CREATION PERSONNAGES -->
     <?php foreach($perso as $_personnage) : ?>
-      <!-- <a href="informations.php?idPerso=" class="personnageContainer"> -->
+
+      <a href="informations.php?persoId=<?= $_personnage->id ?>" class="personnageContainer">
         <img class="persoImg" src="<?= $_personnage->image ?>">
      </a>
     <?php endforeach ?> 
