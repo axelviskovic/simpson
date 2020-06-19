@@ -98,6 +98,16 @@ body{
   position: absolute;
   width : auto;
   height : 100%;
+  left : 0%;
+}
+
+@keyframes lieuxMove{
+  from{
+    left : -100%;
+  }
+  to{
+    left : 0%;
+  }
 }
 
 .mapPage{
