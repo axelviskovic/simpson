@@ -1,14 +1,18 @@
 <?php 
 
   include_once 'config.php';
+  include 'form.php';
 
   $persoId = (int)$_GET['persoId'];
 
-  $query = $pdo->query('SELECT id, nom, nom_complet, age, description, image, id_lieu, first_appear, year_appear, nb_appear, nb_word FROM personnages WHERE id='.$persoId);
+  $query = $pdo->query('SELECT id, nom, nom_complet, age, description, image, id_lieu, first_appear, year_appear, nb_appear, nb_word, classement, sentiments_negatifs FROM personnages WHERE id='.$persoId);
   $persoData = $query->fetch();
 
   $query = $pdo->query('SELECT id, nom, image FROM lieux WHERE id='.$persoData->id_lieu);
   $lieuData = $query->fetch();
+
+  $query = $pdo->query('SELECT id, description FROM anecdote WHERE id_perso='.$persoData->id);
+  $anecdotes = $query->fetchAll();
 
 ?>
 
@@ -30,6 +34,21 @@
 
       <a href="lieux.php?id=<?= $lieuData->id ?>"><img id="closeBtn" src="images/CLOSE.svg"></a>
 
+      <div class="formAnecdoteContainer">
+        <div class="black"></div>
+        <form class="formAnecdote" action="#" method="post">
+          <div class="closeBtn"><img id="closeBtn" src="images/CLOSE.svg"></div>
+          <fieldset id="anecdoteFieldset">
+            <label id="fieldsetTxt" for="anecdote">Ajouter une anecdote</label>
+            <input id="idPersoInput" type="text" name="persoId" value="<?= $persoId ?>">
+            <br>
+            <textarea id="anecdote" placeholder="Votre anecdote..." type="text" name="anecdote"></textarea>
+            <button id="submitBtn" type="submit">Envoyer</button>
+        </fieldset>
+        </form>    
+      </div>
+
+
       <div class="persoContainer">
         <h1 class="nomPerso"><?= $persoData->nom ?></h1>
         <img class="imgPerso" src="<?= $persoData->image ?>">
@@ -42,9 +61,15 @@
           <h2 class="agePersoAnecdotes"><?= $persoData->age ?> ans</h2>
           <div class="separation"></div>
         </div>
-        <h2 class="titreSavoirPlus">Tu veux en savoir plus ?</h2> 
-        <h3 class="txtAnecdote">Son vrai prénom serait soit Maurice ou Morris. Il est néerlandais, il est gaucher, et a un visa pour résider aux États-Unis. Il a aussi fait une école de coiffure mais s'en est fait exclure car il faisait des bêtises avec ses amis. Il éprouve une attirance secrète pour Marge. Tous les Noëls, Moe fait une traditionnelle tentative de suicide, qui échoue à chaque fois.</h3> 
-        <a class="addAnecdote" href="#">
+        <h2 class="titreSavoirPlus">Anecdotes</h2> 
+        <div class="anecdotesList">
+          <?php foreach($anecdotes as $_anecdote) : ?> 
+            <div class="anecdote">
+              <h3 class="txtAnecdote"><?= $_anecdote->description ?></h3> 
+            </div>
+          <?php endforeach ?>
+        </div>
+        <a class="addAnecdote">
           <img class="btnAddAnecdote" src="images/add.svg">
           <h2 class="agePersoAnecdotes">Ajouter une anecdote</h2>
         </a>
@@ -60,14 +85,14 @@
           <h1 class="personnalite">Personnalité</h1>
           <div class="sentimentContainer">
             <div class="negatif"> 
-              <h1 class="percent">56%</h1>
+              <h1 class="percent"><?= $persoData->sentiments_negatifs ?></h1>
               <h1 text-align="right" class="sentimentsTxt">Sentiments négatifs</h1>
             </div>
             <div class="blueBar"></div>
-            <div class="redBar"></div>
+            <div style="width:<?= 0.6*$persoData->sentiments_negatifs ?>%;" class="redBar"></div>
             <div class="positif"> 
               <h1  class="sentimentsTxt">Sentiments positifs</h1>
-              <h1 class="percent">44%</h1>
+              <h1 class="percent"><?= 100 - $persoData->sentiments_negatifs ?></h1>
             </div>
           </div>
         </div>
@@ -76,14 +101,16 @@
           <h1 id="apparuDans" class="simpsonFont">Est apparu dans</h1>
           <h1 id="nbEpisode">3<?= $persoData->nb_appear ?></h1>
           <h1 id="episodes" class="simpsonFont">episodes</h1>
-          <h1 id="classementBavard"class="simpsonFont">6ème</h1>
-          <h1 id="persoBavard"class="simpsonFont">personnage le<br>plus bavard avec</h1>
+          <h1 id="classementBavard"class="simpsonFont">
+            <?= $persoData->classement ?>
+          </h1>
+          <h1 id="persoBavard"class="simpsonFont">ème personnage le<br>plus bavard avec</h1>
           <h1 id="totalMots"><?= $persoData->nb_word ?></h1>
           <h1 id="mots"class="simpsonFont">mots</h1>
         </div>
       </div>
 
 
-
+      <script src="scripts/informations.js"></script>
   </body>
 </html>

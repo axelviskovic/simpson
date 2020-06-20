@@ -24,11 +24,13 @@
       <h1 class="txtLoader">Loading...</h1>
     </div>
 
+    <div class="txtIndex">
+        <h1>Découvrez la face cachée des 30 saisons des Simpsons grâce aux datas que ce site met à votre disposition.</h1>
+    </div>
     
-    
-    <a href="map.php"><img class="mapPage" src="images/DECOUVRIRMAP.png"></a>
-    <a href="lieux"><img class="lieuxPage" src="images/LIEUX.png"></a>
-    <a href="perso"><img class="personnagesPage" src="images/PERSONNAGES.png"></a>
+    <a class="test" href="map.php"><img class="mapPage" src="images/DECOUVRIRMAP.png"></a>
+    <a class="test" href="lieux"><img class="lieuxPage" src="images/PRODUCTION.png"></a>
+    <a class="test" href="perso.php"><img class="personnagesPage" src="images/PERSONNAGE.png"></a>
 
   </body>
 </html>

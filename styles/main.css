@@ -69,6 +69,22 @@ body{
   left : 3px;
 }
 
+.txtIndex{
+  width : 100%;
+  height : 6%;
+  position: absolute;
+  bottom : 0px;
+  background-color: #9FD3F3;
+  z-index: 999;
+}
+
+.txtIndex h1{
+  color : black;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
 #backgroundMap{
   width : 100%;
   height: 100%;
@@ -92,13 +108,26 @@ body{
   position: absolute;
   width : auto;
   height : 100%;
+  animation : persoMove 1s;
+  animation-delay : 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes persoMove{
+  from{
+    left : -100%;
+  }
+  to{
+    left : 0%;
+  }
 }
 
 .lieuxPage{
   position: absolute;
   width : auto;
   height : 100%;
-  left : 0%;
+  animation : lieuxMove 1s;
+  animation-delay : .4s;
 }
 
 @keyframes lieuxMove{
@@ -117,7 +146,13 @@ body{
   right : 0%;
 }
 
+.test img{
+  transition : all .4s;
+}
 
+.test img:hover{
+  height : 104%;
+}
 
 
 /* LIEUX */

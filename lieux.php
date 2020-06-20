@@ -10,8 +10,7 @@
   $query = $pdo->query('SELECT id, nom, description, image FROM personnages WHERE id_lieu ='.$lieux_id);
   $perso = $query->fetchAll();
 
-  session_start();
-  $_SESSION['lieuInfo'] = $lieux_id;
+
 
 ?>
 
