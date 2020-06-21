@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le :  jeu. 18 juin 2020 à 09:13
+-- Généré le :  Dim 21 juin 2020 à 11:40
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.4.2
 
@@ -40,8 +40,8 @@ INSERT INTO `lieux` (`id`, `nom`, `image`) VALUES
 (7, 'Krusty Burger', 'https://zupimages.net/up/20/25/m41y.jpg'),
 (8, 'Taverne de Moe', 'https://www.zupimages.net/up/20/25/t7xi.jpg'),
 (9, 'Maison Flanders', 'https://zupimages.net/up/20/25/u2i6.jpg'),
-(10, 'Ferme ', 'https://www.zupimages.net/up/20/25/dupn.jpg'),
-(11, 'Studio TV', ''),
+(10, 'Ferme ', 'https://zupimages.net/up/20/25/e86l.png'),
+(11, 'Studio TV', 'https://zupimages.net/up/20/25/rl79.jpg'),
 (12, 'Krusty Studio', 'https://zupimages.net/up/20/25/a9kq.jpg'),
 (13, 'Manoir', 'https://zupimages.net/up/20/25/bumi.jpg'),
 (14, 'Bureau Unemployment', 'https://zupimages.net/up/20/25/itbj.jpg'),
@@ -50,13 +50,13 @@ INSERT INTO `lieux` (`id`, `nom`, `image`) VALUES
 (17, 'Donjon de l\'Androide', 'https://zupimages.net/up/20/25/n370.png'),
 (18, 'Maison de retraite', 'https://zupimages.net/up/20/25/pvrz.jpg'),
 (19, 'Duff', 'https://www.zupimages.net/up/20/25/fxev.png'),
-(20, 'Maison de skinner', ''),
-(21, 'Maison de Nelson', ''),
-(22, 'Maison du professeur Frink', ''),
-(23, 'Hopital', ''),
-(24, 'Chez Luigi', ''),
+(20, 'Maison de skinner', 'https://zupimages.net/up/20/25/b5ug.jpg'),
+(21, 'Maison de Nelson', 'https://zupimages.net/up/20/25/irqz.jpg'),
+(22, 'Maison du professeur Frink', 'https://zupimages.net/up/20/25/oz86.jpg'),
+(23, 'Hopital', 'https://zupimages.net/up/20/25/bbdh.jpg'),
+(24, 'Chez Luigi', 'https://zupimages.net/up/20/25/8q2u.jpg'),
 (25, 'Eglise', 'https://www.zupimages.net/up/20/25/lipc.png'),
-(26, 'Restaurant Fruits de mer', '');
+(26, 'Restaurant Fruits de mer', 'https://zupimages.net/up/20/25/ko22.jpg');
 
 --
 -- Index pour les tables déchargées

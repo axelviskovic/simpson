@@ -1,0 +1,142 @@
+body{
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+    background-color: #161616;
+    position: relative;
+}
+
+.barreJaune{
+    width : auto;
+    height : 100%;
+    position: absolute;
+    top : 0%;
+    right : 0%;
+}
+
+.btnList{
+    width : 7%;
+    height : 100%;
+    position: absolute;
+    top : 0;
+    right : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLink img{
+    width : 60px;
+    height : auto;
+    margin : 10px auto;
+}
+
+.persoBulleContainer{
+    width : 300px;
+    height : 300px;
+    position: absolute;
+}
+
+.bubulle{
+    position: absolute;
+    width : 50px;
+    height: auto;
+    top : 20%;
+    left : 10%;
+}
+
+.persoContainer{
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    border : 2px solid #FED51B;
+    opacity: .4;
+    transition : all .4s;
+    cursor: pointer;
+}
+
+.persoContainer:hover{
+    opacity: 1;
+}
+
+.persoBulle{
+    width : 100%;
+    height : auto;
+}
+
+#bulle1{
+    left :  40%;
+    top : 40%;
+}
+#bulle2{
+    left : 30%;
+    top : 20%;
+}
+#bulle3{
+    left : 42%;
+    top : 5%;
+}
+
+#bulle4{
+    left : 30%;
+    top : 60%;
+}
+#bulle5{
+    left : 60%;
+    top : 30%;
+}
+#bulle6{
+    left : 20%;
+    top : 40%;
+}
+#bulle7{
+    left : 20%;
+    top : 70%;
+}
+#bulle8{
+    left : 40%;
+    top : 80%;
+}
+#bulle9{
+    left : 20%;
+    top : 20%;
+}
+#bulle10{
+    left : 50%;
+    top : 70%;
+}
+#bulle11{
+    left : 55%;
+    top : 55%;
+}
+#bulle12{
+    left : 52%;
+    top : 30%;
+}
+#bulle13{
+    left : 15%;
+    top : 60%;
+}
+#bulle14{
+    left : 60%;
+    top : 20%;
+}
+#bulle15{
+    left : 46%;
+    top : 31%;
+}
+#bulle16{
+    left : 35%;
+    top : 50%;
+}
+#bulle17{
+    left : 55%;
+    top : 47%;
+}
+#bulle18{
+    left : 25%;
+    top : 65%;
+}
