@@ -1,0 +1,208 @@
+body{
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+    background-color: #161616;
+    position: relative;
+}
+
+.backgroundCloud{
+    width : 100%;
+    height: 100%;
+    position: absolute;
+    top : 0;
+    left : 0;
+    opacity: .4;
+}
+
+.flecheBack{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.flecheBack:hover{
+    left : 3px;
+}
+
+.txtEnHaut{
+    font-size: 20px;
+    color : white;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    position: absolute;
+    top : 10%;
+    left : 1%;
+}
+
+.barreJaune{
+    width : auto;
+    height : 100%;
+    position: absolute;
+    top : 0%;
+    right : 0%;
+}
+
+.btnList{
+    width : 7%;
+    height : 100%;
+    position: absolute;
+    top : 0;
+    right : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLink img{
+    width : 60px;
+    height : auto;
+    margin : 10px auto;
+}
+
+/* LIEUX */
+
+.lieuxContainer{
+        width : 70%;
+        height : 70%;
+        border : 1px solid black;
+        position: absolute;
+        top : 15%;
+        left : 15%;
+}
+
+.imgLieu{
+    width : 100%;
+    height : 100%;
+}
+
+.lieu8{
+    width :30%;
+    height: 33%;
+    position: absolute;
+    overflow: hidden;
+    top : 0%;
+    left : 0%;
+}
+
+.lieu6{
+    width :30%;
+    height: 33%;
+    position: absolute;
+    top : 30%;
+    left : 0%; 
+}
+
+.lieu15{
+    width :30%;
+    height: 33%;
+    position: absolute;
+    top : 63%;
+    left : 0%; 
+}
+
+.lieu16{
+    width :20%;
+    height: auto;
+    position: absolute;
+    top : 0%;
+    left : 30%; 
+}
+
+/* BLACK */
+
+.black{
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+}
+
+.black8{
+    width :30%;
+    height: 30%;
+    position: absolute;
+    top : 0%;
+    left : 0%;
+}
+
+.black6{
+    width :30%;
+    height: 33%;
+    position: absolute;
+    top : 30%;
+    left : 0%; 
+}
+
+.black15{
+    width :30%;
+    height: 38%;
+    position: absolute;
+    top : 63%;
+    left : 0%; 
+}
+
+/* HOVER */
+
+.hoverImg{
+    opacity: 1;
+    display : flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btnLieu{
+    color : black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.btnLieu div{
+    width : 120px;
+    height: 40px;
+    margin-top : 60px;
+    background-color: #FED51B;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoverImg h1{
+    font-size: 20px;
+    margin-left : 10px;
+    color : white;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.hover8{
+    width :30%;
+    height: 30%;
+    position: absolute;
+    top : 0%;
+    left : 0%;
+}
+
+.hover6{
+    width :30%;
+    height: 33%;
+    position: absolute;
+    top : 30%;
+    left : 0%; 
+}
+
+.hover15{
+    width :30%;
+    height: 38%;
+    position: absolute;
+    top : 63%;
+    left : 0%; 
+}

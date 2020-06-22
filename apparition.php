@@ -2,8 +2,8 @@
 
 include 'config.php';
 
-$query = $pdo->query('SELECT id, nom, image, nb_word, classement FROM personnages WHERE classement<19');
-$persoWord= $query->fetchAll();
+$query = $pdo->query('SELECT id, nom, image, nb_appear, classement_appear FROM personnages WHERE classement_appear<19');
+$persoAppear= $query->fetchAll();
 
 ?>
 
@@ -19,23 +19,23 @@ $persoWord= $query->fetchAll();
   <body>
 
   <a href="index.php"><img class="flecheBack" src="../images/FLECHEGAUCHEJAUNE.png"></a>
-  <h1 class="txtEnHaut">Personnages qui parlent le plus souvent dans la série</h1>
+    <h1 class="txtEnHaut">Personnages  qui  apparaissent  le  plus  souvent dans  la série</h1>
 
    <img class="barreJaune" src="images/GRAPHEFOND/RectangleJAUNE.png">
    <div class="btnList">
    <a href="#" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/RELATIONS-B.png"></a>
-   <a href="perso.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSNOIR/TALKTHEMOST-N.png"></a>
-   <a href="apparition.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/MOSTVIEWED-B.png"></a>
+   <a href="perso.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/TALKTHEMOST-B.png"></a>
+   <a href="apparition.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSNOIR/MOSTVIEWED-N.png"></a>
    <a href="#" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/AGE-B.png"></a>
    <a href="lieuxInfo.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/LIEUX-B.png"></a>
    </div>
   <div class="backgroundClick"></div>
-   <?php foreach($persoWord as $_perso) : ?>
-    <div class="bulleContainer bubble<?= $_perso->classement ?>">
-      <h1 class="txtBubble"><span class="grey"><?= $_perso->classement ?>ème</span> personnage le plus bavard avec <span class="red"><?= $_perso->nb_word ?></span> mots</h1>
+   <?php foreach($persoAppear as $_perso) : ?>
+    <div class="bulleContainer bubble<?= $_perso->classement_appear ?>">
+      <h1 class="txtBubble"><span class="grey"><?= $_perso->classement_appear ?>ème</span> personnage le plus présent avec <span class="red"><?= $_perso->nb_appear ?></span> apparitions</h1>
       <img src="images/GRAPHEFOND/bubble.png" class="bubulle">
     </div>
-   <div style="width:<?= 210 - $_perso->classement * 10 ?>px; height:<?= 210 - $_perso->classement * 10 ?>px;" class="persoContainer" id="bulle<?= $_perso->classement ?>">
+   <div style="width:<?= 210 - $_perso->classement_appear * 10 ?>px; height:<?= 210 - $_perso->classement_appear * 10 ?>px;" class="persoContainer" id="bulle<?= $_perso->classement_appear ?>">
     <img class="persoBulle" src="<?= $_perso->image ?>">
    </div>
 
