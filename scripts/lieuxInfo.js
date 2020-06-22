@@ -1,13 +1,17 @@
-const hoverImg = document.querySelectorAll('.hoverImg')
 const black = document.querySelectorAll('.black')
 
 
-for(let i=0; i<hoverImg.length;i++){
-    hoverImg[i].addEventListener(
+for(let i=0; i<black.length;i++){
+    black[i].addEventListener(
         'mouseover',
         ()=>{
-            hoverImg[i].style.opacity='1'
             black[i].style.opacity='.4'
+        }
+    )
+    black[i].addEventListener(
+        'mouseout',
+        ()=>{
+            black[i].style.opacity='0'
         }
     )
 }

@@ -2,7 +2,7 @@
 
 include 'config.php';
 
-$query = $pdo->query('SELECT id, nom, image FROM lieux');
+$query = $pdo->query('SELECT id, nom, image, apparition, taux FROM lieux');
 $lieux= $query->fetchAll();
 
 ?>
@@ -43,14 +43,13 @@ $lieux= $query->fetchAll();
     <div class="black black6"></div>
     <div class="black black15"></div>
 
-    <div class="hoverImg hover8"><h1><?= $lieux[7]->nom ?><a  class="btnLieu" href="lieux.php?id=8"><div>S'y rendre</div></a></h1></div>
-    <div class="hoverImg hover6"><h1><?= $lieux[5]->nom ?><a  class="btnLieu" href="lieux.php?id=6"><div>S'y rendre</div></a></h1></div>
-    <div class="hoverImg hover15"><h1><?= $lieux[14]->nom ?><a  class="btnLieu" href="lieux.php?id=15"><div>S'y rendre</div></a></h1></div>
+  </div>
+  <div class="statContainer">
 
   </div>
 
 
 
-    <!-- <script src="scripts/perso.js"></script> -->
+    <script src="scripts/lieuxInfo.js"></script>
   </body>
 </html>
