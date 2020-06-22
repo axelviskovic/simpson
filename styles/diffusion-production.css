@@ -1,0 +1,46 @@
+@font-face
+{
+    font-family: 'Simpsonfont';
+    src: url('.././fonts/Simpsonfont.otf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Theboldfont';
+    src: url('.././fonts/theboldfont.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('.././fonts/Raleway.ttf') format('truetype');
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.production-diffusion{
+    display: flex;
+    justify-content: center;
+}
+
+div.production-diffusion div img{
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+img.return{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+

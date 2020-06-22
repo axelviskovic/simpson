@@ -29,7 +29,7 @@
     </div>
     
     <a class="test" href="map.php"><img class="mapPage" src="images/DECOUVRIRMAP.png"></a>
-    <a class="test" href="lieux"><img class="lieuxPage" src="images/PRODUCTION.png"></a>
+    <a class="test" href="diffusion-production.php"><img class="lieuxPage" src="images/PRODUCTION.png"></a>
     <a class="test" href="perso.php"><img class="personnagesPage" src="images/PERSONNAGE.png"></a>
 
   </body>
