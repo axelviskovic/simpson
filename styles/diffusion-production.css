@@ -1,17 +1,17 @@
 @font-face
 {
     font-family: 'Simpsonfont';
-    src: url('.././fonts/Simpsonfont.otf') format('truetype');
+    src: url('.././font/Simpsonfont.otf') format('truetype');
 }
 @font-face
 {
     font-family: 'Theboldfont';
-    src: url('.././fonts/theboldfont.ttf') format('truetype');
+    src: url('.././font/theboldfont.ttf') format('truetype');
 }
 @font-face
 {
     font-family: 'Raleway';
-    src: url('.././fonts/Raleway.ttf') format('truetype');
+    src: url('.././font/Raleway.ttf') format('truetype');
 }
 
 html,body{
