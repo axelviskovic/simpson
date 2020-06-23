@@ -2,6 +2,13 @@
 
   include_once 'config.php';
   
+  $query = $pdo->query('SELECT id, nom, image FROM lieux');
+  $lieu = $query->fetchAll();
+
+  $query = $pdo->query('SELECT id, nom, description, image FROM personnages');
+  $perso = $query->fetchAll();
+
+
 
 ?>
 
@@ -30,7 +37,20 @@
     
     <a class="test" href="map.php"><img class="mapPage" src="images/DECOUVRIRMAP.png"></a>
     <a class="test" href="diffusion-production.php"><img class="lieuxPage" src="images/PRODUCTION.png"></a>
-    <a class="test" href="perso.php"><img class="personnagesPage" src="images/PERSONNAGE.png"></a>
+    <a class="test" href="relations.php"><img class="personnagesPage" src="images/PERSONNAGE.png"></a>
 
+    <?php foreach($lieu as $_lieu) : ?>
+
+      <img class="douilleImg" src="<?= $_lieu->image ?>">
+
+    <?php endforeach ?>
+
+    <?php foreach($perso as $_perso) : ?>
+
+      <img class="douilleImg" src="<?= $_perso->image ?>">
+
+    <?php endforeach ?>
+
+      <script src='scripts/main.js'></script>
   </body>
 </html>

@@ -23,7 +23,7 @@ $persoWord= $query->fetchAll();
 
    <img class="barreJaune" src="images/GRAPHEFOND/RectangleJAUNE.png">
    <div class="btnList">
-   <a href="#" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/RELATIONS-B.png"></a>
+   <a href="relations.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/RELATIONS-B.png"></a>
    <a href="perso.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSNOIR/TALKTHEMOST-N.png"></a>
    <a href="apparition.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/MOSTVIEWED-B.png"></a>
    <a href="#" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/AGE-B.png"></a>

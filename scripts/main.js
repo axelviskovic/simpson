@@ -7,3 +7,11 @@ for(i=0; i<personnageContainer.length; i++){
     personnageContainer[i].style.left = values[i]+'%'
 
 }
+
+const loader = document.querySelector('.loaderContainer')
+
+
+window.onload=function()   {
+    
+    loader.style.display='none'
+  }
