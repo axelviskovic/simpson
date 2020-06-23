@@ -21,16 +21,7 @@ html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-}
-
-div.production-diffusion{
-    display: flex;
-    justify-content: center;
-}
-
-div.production-diffusion div img{
-    max-height: 100vh;
-    max-width: 100vw;
+    background-color: #F9BDC5;
 }
 
 img.return{
@@ -44,3 +35,38 @@ img.return{
     cursor: pointer;
 }
 
+img.return:hover{
+    left: 3px;
+}
+
+img.country-map{
+    position: absolute;
+    width : auto;
+    height : 100%;
+    animation : map-move 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes map-move{
+    from{
+      left : -100%;
+    }
+    to{
+      left : 0%;
+    }
+  }
+
+img.diffusion-page{
+    position: absolute;
+    width : auto;
+    height : 100%;
+    right : 0%;
+  }
+
+a img.country-map:hover{
+    height : 104%;
+}
+
+a img.diffusion-page:hover{
+    height : 104%;
+}
