@@ -2,8 +2,9 @@
 
 include 'config.php';
 
-$query = $pdo->query('SELECT id, nom, image, nb_appear, classement_appear FROM personnages WHERE classement_appear<19');
-$persoAppear= $query->fetchAll();
+$query = $pdo->query('SELECT id, nom, id_lieu image, nb_appear, classement_appear FROM personnages');
+$perso= $query->fetchAll();
+$classement = [$perso[0],$perso[1],$perso[2],$perso[3],$perso[4],$perso[18],$perso[20],$perso[35],$perso[44],$perso[22],$perso[15],$perso[48],$perso[8],$perso[12],$perso[34],$perso[45],$perso[5]];
 
 ?>
 
@@ -14,7 +15,7 @@ $persoAppear= $query->fetchAll();
     <title>Simpson</title>
     <meta name="description" content="description de la page"/>
     <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
-    <link rel="stylesheet" href="styles/perso.css">
+    <link rel="stylesheet" href="styles/apparition.css">
   </head>
   <body>
 
@@ -29,20 +30,25 @@ $persoAppear= $query->fetchAll();
    <a href="#" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/AGE-B.png"></a>
    <a href="lieuxInfo.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/LIEUX-B.png"></a>
    </div>
-  <div class="backgroundClick"></div>
-   <?php foreach($persoAppear as $_perso) : ?>
-    <div class="bulleContainer bubble<?= $_perso->classement_appear ?>">
-      <h1 class="txtBubble"><span class="grey"><?= $_perso->classement_appear ?>ème</span> personnage le plus présent avec <span class="red"><?= $_perso->nb_appear ?></span> apparitions</h1>
-      <img src="images/GRAPHEFOND/bubble.png" class="bubulle">
+
+    <div class="barreJauneVerticale"></div>
+
+   <div class="apparitionContainer"> 
+      <?php foreach($classement as $_perso) : ?>
+        <div class="personnage">
+          <h2 class="nomPerso"><?= $_perso->nom ?></h2>
+          <span style="width :<?= 1.2 * $_perso->nb_appear ?>px; " class="barreApparition barre<?= $_perso->classement_appear ?>"></span>
+        </div>
+
+        <div class="episodesContainer">
+          <h1 class="nbEpisode"><?= $_perso->nb_appear ?></h1>
+          <h1 class="episodes">épisodes</h1>
+       </div>
+
+      <?php endforeach ?>
     </div>
-   <div style="width:<?= 210 - $_perso->classement_appear * 10 ?>px; height:<?= 210 - $_perso->classement_appear * 10 ?>px;" class="persoContainer" id="bulle<?= $_perso->classement_appear ?>">
-    <img class="persoBulle" src="<?= $_perso->image ?>">
-   </div>
+   
 
-   <?php endforeach ?>
-
-
-
-    <script src="scripts/perso.js"></script>
+    <script src="scripts/apparition.js"></script>
   </body>
 </html>

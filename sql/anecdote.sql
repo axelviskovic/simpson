@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le :  Dim 21 juin 2020 à 11:41
+-- Généré le :  mar. 23 juin 2020 à 13:08
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.4.2
 
@@ -80,7 +80,8 @@ INSERT INTO `anecdote` (`id`, `description`, `id_perso`) VALUES
 (56, 'Son vrai prénom serait soit Maurice ou Morris.\r\n', 37),
 (57, 'Au début de la série, le créateur de Matt Groening souhaitait donner une identité secrète au papa de la famille Simpson. A l\'origine, Homer et Krusty le Clown avaient en effet été conçus pour ne former qu\'un seul et même personnage.', 71),
 (58, 'Il a un quotient intellectuel de 197.\r\n', 41),
-(59, 'Personne ne voulait manger de la nourriture italienne préparée par quelqu\'un nommé Lothar. Mais après avoir adopté un faux accent italien, changé de nom et fait peau neuve, son restaurant est devenu bondé presque tous les soirs.\r\n', 44);
+(59, 'Personne ne voulait manger de la nourriture italienne préparée par quelqu\'un nommé Lothar. Mais après avoir adopté un faux accent italien, changé de nom et fait peau neuve, son restaurant est devenu bondé presque tous les soirs.\r\n', 44),
+(60, 'Il a un t-shirt rose', 24);
 
 --
 -- Index pour les tables déchargées
@@ -100,4 +101,4 @@ ALTER TABLE `anecdote`
 -- AUTO_INCREMENT pour la table `anecdote`
 --
 ALTER TABLE `anecdote`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;

@@ -10,8 +10,13 @@ for(i=0; i<personnageContainer.length; i++){
 
 const loader = document.querySelector('.loaderContainer')
 
+if(localStorage.getItem('loaderDone')=='yes'){
+    loader.style.display='none'
+}
+
 
 window.onload=function()   {
     
     loader.style.display='none'
+    localStorage.setItem('loaderDone', 'yes');
   }
