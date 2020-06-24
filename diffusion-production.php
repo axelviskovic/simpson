@@ -18,7 +18,7 @@
 </head>
 <body>
     <a href="diffusion.php"><img class="diffusion-page" src="./images/saisons.png"></a>
-    <a href="#"><img class="country-map" src="./images/country-map.png"></a>
+    <a href="carte.php"><img class="country-map" src="./images/country-map.png"></a>
     <a href="index.php"><img src="./images/FLECHEGAUCHEJAUNE.png" alt="Ecran précédent" class="return"></a>
 </body>
 </html>

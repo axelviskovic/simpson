@@ -27,7 +27,7 @@ $classement = [$perso[0],$perso[1],$perso[2],$perso[3],$perso[4],$perso[18],$per
    <a href="relations.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/RELATIONS-B.png"></a>
    <a href="perso.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/TALKTHEMOST-B.png"></a>
    <a href="apparition.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSNOIR/MOSTVIEWED-N.png"></a>
-   <a href="#" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/AGE-B.png"></a>
+   <a href="graph.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/AGE-B.png"></a>
    <a href="lieuxInfo.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/LIEUX-B.png"></a>
    </div>
 

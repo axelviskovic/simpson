@@ -17,9 +17,7 @@ $lieux= $query->fetchAll();
     <link rel="stylesheet" href="styles/relations.css">
   </head>
   <body>
-
-  <img class="backgroundCloud" src="images/nuages.png">
-
+    
   <img id="poubelle" src="images/poubelle.png">
   <img id="voir" src="images/voir.png">
   <h3 id="poubelleTxt">Tout effacer</h3>
@@ -33,7 +31,7 @@ $lieux= $query->fetchAll();
    <a href="relations.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSNOIR/RELATIONS-N.png"></a>
    <a href="perso.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/TALKTHEMOST-B.png"></a>
    <a href="apparition.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/MOSTVIEWED-B.png"></a>
-   <a href="#" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/AGE-B.png"></a>
+   <a href="graph.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/AGE-B.png"></a>
    <a href="lieuxInfo.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSBLANC/LIEUX-B.png"></a>
    </div>
 
