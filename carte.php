@@ -18,7 +18,7 @@ $pays = $query->fetchAll();
   </head>
   <body>
 
-  <a href="index.php"><img class="flecheBack" src="../images/FLECHEGAUCHEJAUNE.png"></a>
+  <a href="diffusion-production.php"><img class="flecheBack" src="../images/FLECHEGAUCHEJAUNE.png"></a>
   <h1 class="txtEnHaut">Quelques datas sur la production et la diffusion</h1>
   <img class="barreJaune" src="images/GRAPHEFOND/RectangleJAUNE.png">
 
