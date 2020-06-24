@@ -17,12 +17,12 @@
     <link href="./styles/saison.css" rel="stylesheet">
 </head>
 <body style="background-image: url('<?= $saison->imagemeilleurenote ?>');">
+    <a href="diffusion.php"><img src="./images/FLECHEGAUCHEJAUNE.png" alt="Ecran précédent" class="return"></a>
     <h2>Saison <?= $saison->saisons ?></h2>
     <div class="saison-moyenne">
         <img src="./images/star.png">
         <h4><?= $saison->notemoy ?>/10</h4>
     </div>
-    <a href="diffusion.php"><img src="./images/CLOSE.svg" class="close"></a>
     <div class="container">
         <div class="numbers">
             <h4><?= $saison->nbrepisode ?>  Episodes</h4>
@@ -40,7 +40,7 @@
                     <h6>Nouveaux<br>personnages</h6>
                 </div>
             </div>
-            <h5>Evaluation des episodes</h5>
+            <h5>Evaluation des épisodes</h5>
             <div class="graph">
                 <div class="legend">
                     <div class="notes-negatives">
