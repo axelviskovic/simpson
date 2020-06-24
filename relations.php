@@ -23,6 +23,8 @@ include 'config.php';
   <a href="index.php"><img class="flecheBack" src="../images/FLECHEGAUCHEJAUNE.png"></a>
   <h1 class="txtEnHaut">Relations entre les personnages</h1>
 
+  <h1 id='prenom'></h1>
+
   <img class="barreJaune" src="images/GRAPHEFOND/RectangleJAUNE.png">
    <div class="btnList">
    <a href="relations.php" class="btnLink"><img src="images/GRAPHEFOND/BOUTONSNOIR/RELATIONS-N.png"></a>
