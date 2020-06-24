@@ -19,7 +19,7 @@ $classement = [$perso[0],$perso[1],$perso[2],$perso[3],$perso[4],$perso[18],$per
   </head>
   <body>
 
-  <a href="index.php"><img class="flecheBack" src="../images/FLECHEGAUCHEJAUNE.png"></a>
+  <a href="index.php"><img class="flecheBack" src="images/FLECHEGAUCHEJAUNE.png"></a>
     <h1 class="txtEnHaut">Personnages  qui  apparaissent  le  plus  souvent dans  la série</h1>
 
    <img class="barreJaune" src="images/GRAPHEFOND/RectangleJAUNE.png">

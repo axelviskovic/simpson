@@ -13,7 +13,7 @@
 <body>
     <div class="saisons-navigation">
         <a href="diffusion-production.php"><img src="./images/FLECHEGAUCHEJAUNE.png" alt="Ecran précédent" class="return"></a>
-        <a href="#"><div class="saisons-graph-button">Comparer<br>les saisons</div></a>
+        <a href="comparer.html"><div class="saisons-graph-button">Comparer<br>les saisons</div></a>
     </div>
     <div class="saisons-title">
         <img src="./images/logo.png" alt="Les Simpson">

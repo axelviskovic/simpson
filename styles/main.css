@@ -8,7 +8,26 @@ body{
   color: #444;
   overflow: hidden;
   position: relative;
+}
 
+.screenshot{
+  width : 100%;
+  height : auto;
+}
+
+.flecheBack{
+  width : 80px;
+  height: auto;
+  position: absolute;
+  top : 10px;
+  left : 10px;
+  transition : all .4s ease;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.flecheBack:hover{
+  left : 3px;
 }
 
 .douilleImg{

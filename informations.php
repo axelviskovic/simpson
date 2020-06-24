@@ -32,7 +32,7 @@
 
       <img id="backgroundImg" src="<?= $lieuData->image ?>">
 
-      <a href="lieux.php?id=<?= $lieuData->id ?>"><img id="closeBtn" src="images/CLOSE.svg"></a>
+      <a href="lieux.php?id=<?= $lieuData->id ?>"><img class="flecheBack" src="../images/FLECHEGAUCHEJAUNE.png"></a>
 
       <div class="formAnecdoteContainer">
         <div class="black"></div>

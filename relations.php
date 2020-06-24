@@ -2,9 +2,6 @@
 
 include 'config.php';
 
-$query = $pdo->query('SELECT id, nom, image, apparition, taux FROM lieux');
-$lieux= $query->fetchAll();
-
 ?>
 
 <!DOCTYPE html>

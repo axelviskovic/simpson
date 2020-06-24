@@ -17,9 +17,7 @@ $lieux= $query->fetchAll();
     <link rel="stylesheet" href="styles/lieuxInfo.css">
   </head>
   <body>
-
-  <img class="backgroundCloud" src="images/nuages.png">
-
+    
   <a href="index.php"><img class="flecheBack" src="../images/FLECHEGAUCHEJAUNE.png"></a>
   <h1 class="txtEnHaut">Lieux qui apparaissent le plus tout au long de la série</h1>
 
