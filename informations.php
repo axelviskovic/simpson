@@ -99,7 +99,7 @@
         <div class="apparitionContainer">
           <h1 class="personnalite"></h1>
           <h1 id="apparuDans" class="simpsonFont">Est apparu dans</h1>
-          <h1 id="nbEpisode">3<?= $persoData->nb_appear ?></h1>
+          <h1 id="nbEpisode"><?= $persoData->nb_appear ?></h1>
           <h1 id="episodes" class="simpsonFont">episodes</h1>
           <h1 id="classementBavard"class="simpsonFont">
             <?= $persoData->classement ?>
